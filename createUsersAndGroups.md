@@ -44,7 +44,12 @@ passwd <username>
 
 - The user `loki` is in the primary group `norse-guder`. Your new user is in `norse-guder` as a secondary group.
   - If your new user creates a file, can `loki` read it?
-  - If `loki` creates a file, can your new user read it?
-  - If `loki` creates a file, what is that file's default group owner?
-  - If your new user creates a file, what is that file's default group owner?
+    yes because group has access to group files 
+    yes because they are a secondary member of the group
+ - If `loki` creates a file, can your new user read it?
+  yes because in same group 
+ - If `loki` creates a file, what is that file's default group owner?
+   the file's default group owner is norse-guider 
+ - If your new user creates a file, what is that file's default group owner?
+    their primary group 
 
