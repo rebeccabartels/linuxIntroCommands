@@ -24,16 +24,23 @@
 
 ## Questions
 - What's the advantage of allowing multiple users to have accounts on a single machine?
+allows multiple users to share files
 
 - What is the main purpose of groups?
 
+
 - Which command do you use to add a user? There are two possible answers.
+adduser which prompts for a password 
+seradd, which creates user without password 
 
 - Which command do you use to change a user's password?
+passwd <username>
 
 - Which command do you use to:
   - Change a user's primary group?
+  usermod +g <primary group name> <username>
   - Change a user's secondary group?
+  usermod -aG <secondary group name> <username>
 
 - The user `loki` is in the primary group `norse-guder`. Your new user is in `norse-guder` as a secondary group.
   - If your new user creates a file, can `loki` read it?
