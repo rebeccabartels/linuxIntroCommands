@@ -1,6 +1,7 @@
 ## Sysadmin Essentials: Archiving Data using tar
 --------
 ## Instructions
+
 -------
 ## Listing and Extracting the Contents of an Archive
 In this activity, you will *list*  and *extract* the contents of an archive using the TarDoc.tar file.
