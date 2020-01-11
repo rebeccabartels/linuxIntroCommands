@@ -5,18 +5,18 @@ In this activity, you will complete a review of core Linux concepts.
 - Take your time and be thorough when answering each question. Once you have finished, be prepared to be called on to answer questions during our review.
 ### Questions
 - What are some Text Editors?
-nano, vim
+emacs, nano, vim
 - What is the Top of the Linux file structure?
-the root directory 
+the root directory '/'  
 - Name the directory that contains:
-  - Binaries
-bin
-  - Files associated to the Kernel
+  - Binaries / Executables 
+/bin
+  - Files associated to the Kernel(core part of OS)
 /boot
   - Log Files
-/var
+/var/log
   - Temporary Files
-/cdrom
+/tmp, /var/tmp 
   - Configuration Files
 /etc 
   - Process Files
@@ -25,43 +25,48 @@ bin
 /documents 
 - Name the command you use to:
   - Install a package
-apt-get install 
+apt install <package> 
   - Add a user (*Note*: Name two commands.)
 add user
 user add 
   - Change a password
-su passwd
+passwd <user>
   - Create a neww group
-groupadd 
+groupadd <group>
   - Add a user to a group
-usermod -a -G examplegroup exampleusername
+usermod -aG examplegroup exampleusername
   - Check which groups you’re in
 groups 
   - Find your user ID
 usermod -u 1004 user_2 
 - What are the 3 types of file permissions?
 r, w, ex
+Owner, Group,and World/Other 
 - Which command displays a file’s permissions?
 chmod 
 - Which file gets modified when a user is added to the system?
-
+users
 - Which file contains hashed passwords?
-
+passwd
 - How can you tell which algorithm was used to hash a password in the file above?
-
+the number in the dollar sign ($6$=sha512-crypt hash) 
 - Which command changes file permissions?
-
+chmod 
 - What are the 2 types of ways to change file permissions?
-
+Symbolic and octal
 - What is the command to change ownership permissions?
-
+chown
 - How do you edit the sudoers file?
-
+visudo
 - How do you use sudo?
 sudo
 - What is the command to switch to another user?
-su
+su <user>
 - What is the command to archive files?
-tar 
+tar cvf <archieve name> <file>
 - What is the command to view running processes?
-netstat
+top
+ps 
+-kill processes 
+kill and kill all 
+only kill requires PID 
